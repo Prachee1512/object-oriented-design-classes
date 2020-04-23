@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Mapa",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "dodawanie postaci na mape",
+      "zarządzanie pozycjami postaci",
+      "usuwanie postaci, które nie mają już punktów zdrowia",
+      "rysowanie mapy"
+    ],
+    "collaborators": [
+      "Postać"
+    ]
+  },
+  {
+    "name": "Postać",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "zarządza właściwościami postaci",
+      "przyjmuje obrażenia zredukowane o pancerz",
+      "rozpoczyna walke z innym graczem",
+      ""
+    ],
+    "collaborators": [
+      "Walka",
+      "Postać"
+    ]
+  },
+  {
+    "name": "Ekwipunek",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "dostarczanie informacji o łącznej wartość pancerza",
+      "dostarczanie informacji o aktualnej broni gracza",
+      "zarządzanie przedmiotami gracza",
+      ""
+    ],
+    "collaborators": [
+      "Broń",
+      "Pancerz"
+    ]
+  },
+  {
+    "name": "Atak",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "obliczanie obrażeń",
+      "zadawanie obrażeń ofierze",
+      "określa typ ataku"
+    ],
+    "collaborators": [
+      "Czar",
+      "Walka"
+    ]
+  },
+  {
+    "name": "Walka",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "koniec walki",
+      "decyzja o walce na czary lub zwykłą broń",
+      "ustalanie kolejności ataków",
+      "przeliczanie obrażeń, które zadaje atakujący",
+      "zadawanie obrażeń postaciom",
+      "przyznawanie punktów doświadczenia po walce"
+    ],
+    "collaborators": [
+      "Kostka",
+      "Postać",
+      ""
+    ]
+  },
+  {
+    "name": "Czar",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "weryfikacja czy postać może rzucić czar",
+      "zwracanie wartości zadawanych obrażeń"
+    ],
+    "collaborators": [
+      "Postać",
+      "Broń"
+    ]
+  },
+  {
+    "name": "Broń",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "dostarczanie informacji o wartości zadawanych obrażeń"
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "Pancerz",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "dostarczanie informacji o wartości pancerza"
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "Kostka",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "symulacja rzutu kostką"
+    ],
+    "collaborators": [
+      ""
+    ]
+  }
+]
